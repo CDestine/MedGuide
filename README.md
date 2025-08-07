@@ -1,5 +1,5 @@
 
-Building AI course project
+
 #  MedGuide – Assistant IA de compréhension d’ordonnances médicales
 
 ## Résumé
