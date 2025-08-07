@@ -57,7 +57,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 ## 5. Défis
 - Précision de l’OCR sur écritures manuscrites médicales.
 - Mises à jour régulières des bases de médicaments.
-- Respect strict de la confidentialité (RGPD, HIPAA).
+- Respect strict de la confidentialité .
 - Gestion multilingue et formats variés.
 
 ---
