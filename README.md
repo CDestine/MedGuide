@@ -1,79 +1,58 @@
-
-
-#  MedGuide – Assistant IA de compréhension d’ordonnances médicales
+# MedGuide – AI Assistant for Understanding Medical Prescriptions
 Building AI course project
+## Summary
+MedGuide is an intelligent assistant that helps patients understand their medical prescriptions.  
+From a photo or PDF file, the AI reads the text, identifies the medicines, dosages, and intake schedules, then reformulates the information in plain language with visual icons, and optionally sets up automatic reminders.  
+The goal is to reduce medication errors, improve adherence, and make medical information more accessible to everyone, especially elderly people and non-native speakers.
 
-##  Résumé
-MedGuide est un assistant intelligent qui aide les patients à comprendre leurs ordonnances médicales.  
-À partir d’une photo ou d’un fichier PDF, l’IA analyse le texte, identifie les médicaments, les dosages et les horaires de prise, puis reformule les informations en langage clair, avec des pictogrammes et, en option, des rappels automatiques.
+## Background
+### The problem
+Many people struggle to understand their medical prescriptions due to illegible handwriting, technical terminology, or complex instructions.  
+This can lead to incorrect medication usage, which may have serious health consequences.
 
----
-##   Contexte
-### Problème à résoudre
-De nombreux patients notamment les personnes âgées, les non-francophones et les personnes ayant des difficultés de lecture  peinent à comprendre leurs prescriptions médicales.  
-Cela entraîne des erreurs de dosage, des oublis ou des prises incorrectes.
+### Why it matters
+Medication errors are a significant cause of preventable hospitalizations.  
+By making prescriptions easier to understand, MedGuide directly contributes to patient safety and well-being.
 
-### Fréquence et importance
-Les erreurs médicamenteuses sont une cause fréquente de complications médicales évitables.  
-Une meilleure compréhension des ordonnances peut réduire ces risques et améliorer l’observance du traitement.
+### Personal motivation
+This project was inspired by observing relatives who had difficulties following their treatment correctly due to unclear instructions.
 
-### Motivation personnelle
-Rendre les instructions médicales compréhensibles et accessibles à tous, pour améliorer la santé publique et réduire les hospitalisations évitables.
+## Data and AI techniques
+- **Data sources**:
+  - Images or PDFs of prescriptions (synthetic or anonymized)
+  - Public drug databases (ANSM, DrugBank)
+  - OCR datasets (IAM Dataset, SROIE)
+- **Techniques**:
+  - **OCR**: Tesseract, EasyOCR
+  - **NLP**: spaCy, Transformers for medical entity extraction
+  - **Text simplification**: automatic rephrasing of medical text
+  - **Icons**: medical pictogram libraries
 
----
+## How it is used
+1. The user uploads a photo or PDF of their prescription.
+2. The AI performs OCR to extract the text.
+3. Key information (medicine, dosage, schedule) is identified.
+4. The prescription is displayed in plain language with pictograms.
+5. Optional: reminders are set via notifications.
 
-##   Données et techniques d’IA
-- **Sources de données** :
-  - Images et PDF d’ordonnances (fictives ou anonymisées).
-  - Bases publiques de médicaments (ANSM, DrugBank).
-  - Jeux de données OCR open source (IAM Dataset, SROIE).
-- **Techniques d’IA** :
-  - **OCR** (reconnaissance optique de caractères) – ex. Tesseract, EasyOCR.
-  - **NLP** (traitement du langage naturel) pour extraire noms de médicaments, dosages et horaires.
-  - **Simplification automatique de texte** pour reformuler en langage clair.
-  - **Pictogrammes** via bibliothèques médicales ou génération automatique.
-
----
-
-##   Comment est-elle utilisée
-1. L’utilisateur prend une photo de son ordonnance ou téléverse un PDF.
-2. L’IA lit le texte (OCR) et l’analyse (NLP).
-3. Les informations sont affichées sous forme :
-   - d’un texte clair et simplifié ;
-   - de pictogrammes illustrant moments de prise et précautions (ex. « Avant repas », « Matin »).
-4. Optionnel : notifications automatiques pour rappeler les prises.
-
-**Utilisateurs concernés** :
+**Target users**:
 - Patients
-- Aidants familiaux
-- Médecins et pharmaciens
+- Caregivers
+- Healthcare professionals
 
----
+## Challenges
+- OCR performance on handwritten prescriptions.
+- Privacy and compliance with medical data protection (GDPR, HIPAA).
+- Ensuring extraction accuracy to avoid interpretation errors.
+- Multilingual adaptation.
 
-##  Schéma de fonctionnement
+## Next steps
+- Voice module to explain the prescription orally.
+- Integration with the Shared Medical Record.
+- Mobile version with augmented reality to display instructions on the medicine box.
 
----
-
-##  Défis
-- Précision de l’OCR sur écritures manuscrites médicales.
-- Mises à jour régulières des bases de médicaments.
-- Respect strict de la confidentialité .
-- Gestion multilingue et formats variés.
-
----
-
-##  Et ensuite
-- Ajout d’un module vocal pour expliquer oralement la prescription.
-- Intégration avec le dossier médical partagé.
-- Adaptation internationale (bases locales, langues multiples).
-- Réalité augmentée : afficher les instructions directement sur la boîte.
-
----
-
-##  Ressources
-- **OCR** : [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) (Apache 2.0 License)
-- **NLP** : [spaCy](https://spacy.io/), [Hugging Face Transformers](https://huggingface.co/) (Apache 2.0 License)
-- Bases de données médicales : [ANSM](https://ansm.sante.fr/) (open data), [DrugBank](https://go.drugbank.com/) (licence spécifique)
-- Inspiration : initiatives de santé publique pour l’accessibilité médicale
-
----
+## Acknowledgements
+- **OCR**: [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+- **NLP**: [spaCy](https://spacy.io/), [Hugging Face](https://huggingface.co/)
+- Drug databases: [ANSM](https://ansm.sante.fr/), [DrugBank](https://go.drugbank.com/)
+- Inspiration: public health accessibility initiatives
