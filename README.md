@@ -3,7 +3,7 @@
 #  MedGuide – Assistant IA de compréhension d’ordonnances médicales
 
 ## Résumé
-**MedGuide** est un assistant intelligent qui aide les patients à comprendre leurs ordonnances médicales.  
+MedGuide est un assistant intelligent qui aide les patients à comprendre leurs ordonnances médicales.  
 À partir d’une photo ou d’un fichier PDF, l’IA analyse le texte, identifie les médicaments, les dosages et les horaires de prise, puis reformule les informations en langage clair, avec des pictogrammes et, en option, des rappels automatiques.
 
 ---
