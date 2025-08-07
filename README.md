@@ -2,13 +2,13 @@
 Building AI course project
 #  MedGuide – Assistant IA de compréhension d’ordonnances médicales
 
-## 1. Resumé
+##  Resumé
 **MedGuide** est un assistant intelligent qui aide les patients à comprendre leurs ordonnances médicales.  
 À partir d’une photo ou d’un fichier PDF, l’IA analyse le texte, identifie les médicaments, les dosages et les horaires de prise, puis reformule les informations en langage clair, avec des pictogrammes et, en option, des rappels automatiques.
 
 ---
 
-##  2. Contexte
+##   Contexte
 ### Problème à résoudre
 De nombreux patients notamment les personnes âgées, les non-francophones et les personnes ayant des difficultés de lecture  peinent à comprendre leurs prescriptions médicales.  
 Cela entraîne des erreurs de dosage, des oublis ou des prises incorrectes.
@@ -22,7 +22,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 
 ---
 
-##  3. Données et techniques d’IA
+##   Données et techniques d’IA
 - **Sources de données** :
   - Images et PDF d’ordonnances (fictives ou anonymisées).
   - Bases publiques de médicaments (ANSM, DrugBank).
@@ -35,7 +35,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 
 ---
 
-##  4. Comment est-elle utilisée
+##   Comment est-elle utilisée
 1. L’utilisateur prend une photo de son ordonnance ou téléverse un PDF.
 2. L’IA lit le texte (OCR) et l’analyse (NLP).
 3. Les informations sont affichées sous forme :
@@ -54,7 +54,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 
 ---
 
-## 5. Défis
+##  Défis
 - Précision de l’OCR sur écritures manuscrites médicales.
 - Mises à jour régulières des bases de médicaments.
 - Respect strict de la confidentialité .
@@ -62,7 +62,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 
 ---
 
-## 6. Et ensuite
+##  Et ensuite
 - Ajout d’un module vocal pour expliquer oralement la prescription.
 - Intégration avec le dossier médical partagé.
 - Adaptation internationale (bases locales, langues multiples).
@@ -70,7 +70,7 @@ Rendre les instructions médicales compréhensibles et accessibles à tous, pour
 
 ---
 
-##  7. Ressources
+##  Ressources
 - **OCR** : [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) (Apache 2.0 License)
 - **NLP** : [spaCy](https://spacy.io/), [Hugging Face Transformers](https://huggingface.co/) (Apache 2.0 License)
 - Bases de données médicales : [ANSM](https://ansm.sante.fr/) (open data), [DrugBank](https://go.drugbank.com/) (licence spécifique)
